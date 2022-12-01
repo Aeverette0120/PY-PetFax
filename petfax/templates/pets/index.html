@@ -19,18 +19,18 @@
             {% for pet in pets %}
             <div class="pet">
                 <h2>{{ pet.pet_name }}</h2>
-                <img src="{{ url_for('static', filename='assets/') }}{{pet.pet_photo}}"/>
+                <img src="{{ url_for('static', filename='assets/') }}{{pet.pet_photo}}" />
                 <a href="/pets/{{ pet.pet_id }}">Learn more</a>
             </div>
             {% endfor %}
         </div>
 
     </div>
-    
+
     <div class="callout">
         We'd love to learn more fun facts! <a href="/facts/new">Submit some here.</a>
     </div>
-   
+
 </body>
 
 </html>
